@@ -21,8 +21,10 @@ public class Main {
         mijnReis.simuleerReis(new AutoVervoerStrategy()); // Met auto
         mijnReis.simuleerReis(new OVVervoerStrategy());   // Met OV
 
-        System.out.println("Met <nieuw> vervoer (Stap 2)  ");
-        System.out.println("TODO:");
+        System.out.println("Met ufo");
+        VervoerStrategy ufoVervoer = new UfoVervoerStrategy();
+        mijnReis.setSpits(false);
+        mijnReis.simuleerReis(ufoVervoer);
 
         System.out.println("Met <nieuw> vervoer, lambda edition! (Stap 5)");
         System.out.println("TODO:");

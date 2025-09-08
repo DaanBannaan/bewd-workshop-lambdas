@@ -1,6 +1,6 @@
 package nl.han.bewd.lambdas.reis;
 
-public class Ufo implements VervoerStrategy {
+public class UfoVervoerStrategy implements VervoerStrategy {
     @Override
     public int berekenReistijd(boolean isReisTijdensSpits) {
         if(isReisTijdensSpits) {
