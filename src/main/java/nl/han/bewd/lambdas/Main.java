@@ -26,7 +26,14 @@ public class Main {
         mijnReis.setSpits(false);
         mijnReis.simuleerReis(ufoVervoer);
 
-        System.out.println("Met <nieuw> vervoer, lambda edition! (Stap 5)");
-        System.out.println("TODO:");
+        System.out.println("Met vliegtuig, lambda edition! (Stap 6)");
+        VervoerStrategy Vliegtuiglambda = (isReisTijdensSpits -> {
+            if(isReisTijdensSpits) {
+                return 99;
+            } else {
+                return 20;
+            }
+        });
+        mijnReis.simuleerReis(Vliegtuiglambda);
     }
 }
